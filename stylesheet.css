@@ -1,0 +1,229 @@
+/*.border{
+  border: 1px solid black;
+}*/
+
+.visibleBorder{
+  border: 2px solid black;
+}
+
+/*TEXT CSS*/
+.title{
+  font-family: "Franklin Gothic Medium" sans-serif;
+  font-size: 45px;
+  position: relative;
+  margin-left: 40px;
+}
+
+.textlink{
+  color: blue;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.firstpara{
+  font-size: 20px;
+}
+
+.footerText{
+  color:white;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+
+.breadcrumbText{
+  color: blue;
+  font-size: 15px;
+  position: relative;
+}
+
+.breadcrumbText2{
+  color: blue;
+  font-size: 15px;
+  position: relative;
+  bottom: 5px;
+}
+
+.breadcrumbTitle{
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+  position: relative;
+  bottom: 4px;
+}
+
+
+.buttonText{
+  color:white;
+  font-weight:12px;
+}
+
+
+/*Positions CSS*/
+.footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+.leftmargin{
+  margin-left: 30px;
+}
+
+.leftmargin2{
+  margin-left: 45px;
+}
+
+.topbreak{
+  margin-top: 10px;
+}
+.bottombreak{
+  margin-bottom: 20px;
+}
+
+.topImages{
+  margin-top: 5px;
+}
+
+.floatLeft{
+  float: left;
+}
+
+.formPos{
+  margin-left: 60px;
+}
+
+.returnButton{
+  height: 70px;
+  width: 200px;
+}
+
+.iframe1{
+  height: 769px;
+  width: 1280px;
+}
+
+/*Master Tag CSS*/
+li{
+  display: inline;
+  margin-right: 15px;
+  font-size: 22px;
+}
+a{
+  color: white;
+}
+
+
+/*Footer*/
+
+.thumbnail{
+}
+
+.enlarged{
+
+}
+
+.toggles {
+  width: 100%;
+}
+
+.toggles ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.toggles ul li {
+  margin: 0;
+  padding: 0;
+  background: black;
+  height: 100px;
+  width: 25%;
+  float: left;
+}
+
+.toggles h2 {
+  margin-bottom: 0;
+  margin-top: 20px;
+  width: 100%;
+  float: left;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .toggles ul li {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .toggles ul li {
+    width: 100%;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+    form textarea {
+      width: 300px;
+    }
+}
+
+.buttonColour {
+  background-color: black;
+}
+
+/*Other IDs*/
+
+#theButton{
+}
+
+#navbarBackground{
+  background-color: #000099;
+}
+
+#footerBackground{
+  background-color: #000099;
+}
+
+/*IMG HOVER CSS*/
+
+.imgWrap{
+  width:100%;
+  height: relative;
+  position: relative;
+  opacity:0.5;
+}
+
+.imgText{
+  top: -12px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform:uppercase;
+  color:#fff;
+  text-align:center;
+  position:relative;
+  font-size:17px;
+  background:rgba(0,0,0,0.6);
+  -webkit-transform:translatey(-100px);
+  -ms-transform:translatey(-100px);
+  transform:translatey(-100px);
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+.imgWrap:hover {
+  opacity:1;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.imgWrap:hover .imgText{
+  visibility: visible;
+  opacity: 1;
+}

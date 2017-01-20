@@ -1,0 +1,111 @@
+<!DOCTYPE HTML SYSTEM>
+<html>
+  <head>
+    <link rel="stylesheet" href="bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ben's Webpage Home</title>
+
+  </head>
+
+<body>
+  <div id="navbarBackground">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutMe.html">About Me</a></li>
+        <li><a href="cats.html">Images of My Cats</a></li>
+        <li><a href="projectDisplay.html">Projects Page</a></li>
+        <li><a href="feedback.html">Feedback Page</a></li>
+  </div>
+
+  <ol class="breadcrumb">
+    <div class="floatLeft"><p class="breadcrumbTitle leftmargin ">Your Directory:</p></div>
+    <li><a class="breadcrumbText leftmargin " href="index.html">Home</a></li>
+  </ol>
+
+  <h1 class="title">Welcome to the Webpage all about ME!</h1>
+    </br>
+    <div class="conatiner border">
+      <div class="row leftmargin border">
+        <div class="col-md-6 col-s-8 border col-xs-10">
+          <p class="firstpara">
+            Hello and welcome to my: <span class="bold">"Totally not pointless and not for marks webpage about me!"</span> </br>
+            This website will tell you all you need to know about the man known as Ben Greene, as well as pictures of his cats for some reason.
+          </p>
+        </div>
+      </div>
+
+      <div class="row leftmargin border">
+        <div class="col-md-6 col-s-8 border col-xs-10">
+          <p class="firstpara"> If you wish to actually do something worthwhile with your time I suggest checking out such web pages as <a class="textlink" href="https://www.youtube.com/">YouTube</a> where you can browse billions of videos, or you could go to <a class="textlink" href="http://www.gold.ac.uk/">The Goldsmiths Website</a> and find out about some of the best courses available in Britain!
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+<!--FOOTER START-->
+
+<div class="container footer border" id="footerBackground">
+
+      <button
+      type="button"
+      class="btn btn-info"
+      data-toggle="collapse"
+      data-target="#footer"
+      >
+      Click For Page Options
+    </button>
+
+    <div class="collapse row border visibleBorder" id="footer">
+
+      <div class="border topImages toggles">
+        <div class="col-md-6 col-xs-6 col-s-6 border">
+          <h2>Click to change background</h2>
+          <ul class="background">
+            <li class="black"></li>
+            <li class="purple"></li>
+            <li class="red"></li>
+            <li class="green"></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-xs-6 col-s-6 border">
+          <h2>Click to change color</h2>
+          <ul class="text">
+            <li class="black"></li>
+            <li class="purple"></li>
+            <li class="red"></li>
+            <li class="green"></li>
+          </ul>
+        </div>
+      </div>
+
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      $(".toggles li").each(function(i) {
+        var color = $(this).attr("class");
+        $(this).css("background", color);
+      });
+
+      $(".toggles .background li").click(function() {
+        var color = $(this).attr("class");
+        $("body").css("background", color);
+      });
+
+      $(".toggles .text li").click(function() {
+        var color = $(this).attr("class");
+        $("body").css("color", color);
+      });
+
+    });
+  </script>
+
+  </body>
+
+</html>

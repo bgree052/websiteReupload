@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <title> Cats! </title>
+    <div id="navbarBackground">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">About Me</a></li>
+          <li><a href="cats.html">Images of My Cats</a></li>
+          <li><a href="change.html">Change the Website</a></li>
+    </div>
+    <h1 class="title bottombreak">Change the Website's look with the buttons below!</h1>
+  </head>
+
+  <body>
+    <div class="container-fluid leftmargin">
+      <div class="row">
+        <div class="col-mid-1">
+          <h1>Background Colour</h1>
+          <img id="backgroundBlack" src="assets/black.png"><img src="assets/white.png"><img src="assets/purple.png"><img src="assets/green.png"><img src="assets/grey.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid leftmargin">
+      <div class="row">
+        <div class="col-mid-1">
+          <h1>Text Colour</h1>
+          <img src="assets/black.png"><img src="assets/white.png"><img src="assets/red.png">
+        </div>
+      </div>
+    </div>
+
+<script>
+  $("#backgroundBlack").click(function(){
+      $("body").css("background-color", "black");
+  });
+</script>
+
+
+  </body>
+
+</html>

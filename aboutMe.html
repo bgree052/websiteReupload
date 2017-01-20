@@ -1,0 +1,114 @@
+<!DOCTYPE HTML SYSTEM>
+<html>
+  <head>
+    <link rel="stylesheet" href="bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>About Me</title>
+
+  </head>
+
+  <body>
+<div id="navbarBackground">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutMe.html">About Me</a></li>
+      <li><a href="cats.html">Images of My Cats</a></li>
+      <li><a href="projectDisplay.html">Projects Page</a></li>
+      <li><a href="feedback.html">Feedback Page</a></li>
+</div>
+
+<ol class="breadcrumb">
+  <div class="floatLeft"><p class="breadcrumbTitle leftmargin ">Your Directory:</p></div>
+  <li><a class="breadcrumbText2 leftmargin " href="index.html">Home</a></li>
+  <li><a class="breadcrumbText2 leftmargin " href="aboutMe.html">About Me</a></li>
+</ol>
+
+<h1 class="title bottombreak">This page is about me, what a surprise..</h1>
+
+</br>
+<div class="conatiner border">
+  <div class="row leftmargin border">
+    <div class="col-md-6 border">
+      <p class="firstpara">
+        Well this page is supposed to tell you all about me, so here we go.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+  <!--FOOTER START-->
+
+  <div class="container footer border" id="footerBackground">
+
+        <button
+        type="button"
+        class="btn btn-info"
+        data-toggle="collapse"
+        data-target="#footer"
+        >
+        Click For Page Options
+      </button>
+
+      <div class="collapse row border visibleBorder" id="footer">
+
+        <div class="border topImages toggles">
+          <div class="col-md-6 col-xs-6 col-s-6 border">
+            <h2>Click to change background</h2>
+            <ul class="background">
+              <li class="black"></li>
+              <li class="purple"></li>
+              <li class="red"></li>
+              <li class="green"></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xs-6 col-s-6 border">
+            <h2>Click to change color</h2>
+            <ul class="text">
+              <li class="black"></li>
+              <li class="purple"></li>
+              <li class="red"></li>
+              <li class="green"></li>
+            </ul>
+          </div>
+        </div>
+
+    </div>
+
+<script>
+$(document).ready(function(){
+$(".toggles li").each(function(i) {
+  var color = $(this).attr("class");
+  $(this).css("background", color);
+});
+
+$(".toggles .background li").click(function() {
+  var color = $(this).attr("class");
+  $("body").css("background", color);
+});
+
+$(".toggles .text li").click(function() {
+  var color = $(this).attr("class");
+  $("body").css("color", color);
+});
+
+});
+</script>
+
+
+
+</body>
+
+</html>
